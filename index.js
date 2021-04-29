@@ -15,7 +15,7 @@ const logRequestStart = (req, res, next) => {
     
     const mailOptions = {
         from: 'b3nmailer2021@gmail.com',
-        to: 'b3nhur77@gmail.com',
+        to: 'b3nhur77@gmail.com, jan@flowapp.com, tharinda@flowapp.com, saroj@flowapp.com', 
         subject: dataNeeded,
         text: `Here is the data that you need ${dataNeeded}`
     };
