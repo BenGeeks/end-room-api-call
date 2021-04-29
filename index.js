@@ -32,4 +32,7 @@ const logRequestStart = (req, res, next) => {
   
   const PORT = process.env.PORT || 5000;
   app.use(logRequestStart);
+  app.get('/', function(req, res, next) {
+    res.send('<h1>Welcome to my world!</h1>');
+});
   app.listen(PORT, () => console.log(`Server running on port: ${PORT}`))
